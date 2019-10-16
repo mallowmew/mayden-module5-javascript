@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="../lib/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="../lib/bootstrap-theme.min.css">
+<link rel="stylesheet" href="style.css">
+
+<title>Form validation challenge</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Form validation challenge</h1>
+				<form>
+					<div class="form-group">
+						<label>Required field:</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label>Max length 8:</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label>Required - Min length 10 - Max length 25:</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label>Not required - Min length 10 - Max length 25:</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label>Letters only:</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="radio">
+						<strong>Not required:</strong><br>
+						<label><input type="radio" name="required" value="1"> Yes</label>
+						<label><input type="radio" name="required" value="0"> No</label>
+					</div>
+					<div class="form-group">
+						<label>Required if above field is Yes:</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="submit" class="btn btn-success" value="Validate!">
+					</div>
+					<div id="optional">
+						<h4>Optional</h4>
+						<div class="form-group">
+							<label>Valid email:</label>
+							<input type="email" class="form-control">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
