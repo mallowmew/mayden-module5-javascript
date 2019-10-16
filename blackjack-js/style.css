@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #171412;
+  color: white;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+  background: green;
+}
+
+.player-flex {
+  display: flex;
+}
+
+.player {
+  margin: auto;
+}
+
+.result h1 {
+  margin: auto;
+  padding: 16px;
+  text-align: center;
+}
+
+.card {
+  float: left;
+  position: relative;
+  margin: 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 220px;
+  height: 300px;
+  font-size: 3.6rem;
+  background: white;
+  color: black;
+}
+
+.card span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-size: 7.2rem;
+}
+
+.hearts,
+.diamonds {
+  border-color: #ff0000;
+  color: #ff0000;
+}
+
+.diamonds:before,
+.diamonds:after {
+  content: "♦";
+}
+
+.hearts:before,
+.hearts:after {
+  content: "♥";
+}
+
+.clubs:before,
+.clubs:after {
+  content: "♣";
+}
+
+.spades:before,
+.spades:after {
+  content: "♠";
+}
+
+.card:before {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.card:after {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  transform: rotate(180deg);
+}
+
+.card[class*="ace"] span:before {
+  content: "A";
+}
+
+.card[class*="2"] span:before {
+  content: "2";
+}
+
+.card[class*="3"] span:before {
+  content: "3";
+}
+
+.card[class*="4"] span:before {
+  content: "4";
+}
+
+.card[class*="5"] span:before {
+  content: "5";
+}
+
+.card[class*="6"] span:before {
+  content: "6";
+}
+
+.card[class*="7"] span:before {
+  content: "7";
+}
+
+.card[class*="8"] span:before {
+  content: "8";
+}
+
+.card[class*="9"] span:before {
+  content: "9";
+}
+
+.card[class*="10"] span:before {
+  content: "10";
+}
+
+.card[class*="jack"] span:before {
+  content: "J";
+}
+
+.card[class*="queen"] span:before {
+  content: "Q";
+}
+
+.card[class*="king"] span:before {
+  content: "K";
+}
