@@ -1,4 +1,4 @@
-# Mayden Module 5 - JavaScript Basics and jQuery
+# Mayden Academy Module 5 - JavaScript Basics and jQuery
 
 ## Objectives
 
